@@ -6,6 +6,7 @@ public class Runner {
         
         linkedListDemo();
         stackDemo();
+        queueDemo();
     }
 
     private static void linkedListDemo() {
@@ -78,6 +79,44 @@ public class Runner {
         stack.push(9);
         System.out.println("Size: " + stack.size());        
         stack.printStack();
-
+    }
+    
+    private static void queueDemo() {
+        
+        Queue list = new Queue();
+        
+        System.out.println("Queue at the beginning");
+        System.out.println("Size: " + list.size());
+        list.printQueue();
+        
+        System.out.println("Adding an element");
+        list.enQueue(5);
+        System.out.println("Size: " + list.size());
+        list.printQueue();
+        
+        System.out.println("Adding 2 more elements");
+        list.enQueue(7);
+        list.enQueue(5);
+        System.out.println("Size: " + list.size());
+        list.printQueue();
+   
+        System.out.println("Dequeueing: " + list.deQueue());
+        System.out.println("Size: " + list.size());        
+        list.printQueue();
+        
+        System.out.println("Adding an element");
+        list.enQueue(9);
+        System.out.println("Size: " + list.size());        
+        list.printQueue();
+        
+        System.out.println("Adding an element");
+        list.enQueue(2);
+        System.out.println("Size: " + list.size());        
+        list.printQueue();
+        
+        System.out.println("Adding an element");
+        list.enQueue(4);
+        System.out.println("Size: " + list.size());        
+        list.printQueue();     
     }
 }

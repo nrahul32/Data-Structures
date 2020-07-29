@@ -2,6 +2,8 @@ package nrahul32.data_structures;
 
 public class Stack {
     
+    // Last in First out
+    
     int top = 0;
     int capacity = 2;
     int[] stack = new int[capacity];

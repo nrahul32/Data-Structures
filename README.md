@@ -6,7 +6,7 @@ In this project, I have implemented the following data structures in Java:
 
 <br /><b>Linked List demo output:</b>
 <br />
-<code>
+
 <br />List at the beginning
 <br />List is empty
 <br />Adding 3 elements
@@ -41,6 +41,7 @@ In this project, I have implemented the following data structures in Java:
 
 <br /><b>Stack demo output:</b>
 <br />
+
 <br />Stack at the beginning
 <br />Size: 0
 <br />Stack is empty
@@ -49,6 +50,7 @@ In this project, I have implemented the following data structures in Java:
 <br />Stack:
 <br />5
 <br />Adding 2 more elements
+<br />Expanding the stack's capacity form 2 to 4
 <br />Size: 3
 <br />Stack:
 <br />5
@@ -70,4 +72,3 @@ In this project, I have implemented the following data structures in Java:
 <br />5
 <br />7
 <br />9
-</code>

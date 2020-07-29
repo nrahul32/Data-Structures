@@ -3,13 +3,29 @@ package nrahul32.data_structures;
 public class Stack {
     
     int top = 0;
-    int[] stack = new int[10];
+    int capacity = 2;
+    int[] stack = new int[capacity];
     
     public void push(int number) {
+        
+        if(top == capacity) {
+            expand();
+        }
         stack[top] = number;
         top++;
     }
     
+    private void expand() {
+        
+        System.out.println("Expanding the stack's capacity form "+ capacity +" to " + capacity*2);
+        int[] newStack = new int[capacity*2];
+        for(int i = 0; i < top; i++) {
+            newStack[i] = stack[i];
+        }
+        stack = newStack;
+        capacity = capacity * 2 ;
+    }
+
     public int pop() {
         
         if(isEmpty()) {
@@ -38,6 +54,7 @@ public class Stack {
     }
     
     public boolean isEmpty() {
+        
         if(top == 0) {
             return true;
         } else {
@@ -46,6 +63,7 @@ public class Stack {
     }
     
     public void printStack() {
+        
         if(isEmpty()) {
             System.out.println("Stack is empty");
         } else {

@@ -5,7 +5,7 @@ public class Runner {
     public static void main(String[] args) {
         
         linkedListDemo();
-
+        stackDemo();
     }
 
     private static void linkedListDemo() {
@@ -47,5 +47,37 @@ public class Runner {
         System.out.println("List now:");
         list.printList();
     }
+    
+    private static void stackDemo() {
+        
+        Stack stack = new Stack();
+        
+        System.out.println("Stack at the beginning");
+        System.out.println("Size: " + stack.size());
+        stack.printStack();
+        
+        System.out.println("Adding an element");
+        stack.push(5);
+        System.out.println("Size: " + stack.size());
+        stack.printStack();
+        
+        System.out.println("Adding 2 more elements");
+        stack.push(7);
+        stack.push(5);
+        System.out.println("Size: " + stack.size());
+        stack.printStack();
+        
+        System.out.println("Peeking: " + stack.peek());
+        stack.printStack();
+        
+        System.out.println("Popping: " + stack.pop());
+        System.out.println("Size: " + stack.size());        
+        stack.printStack();
+        
+        System.out.println("Adding an element");
+        stack.push(9);
+        System.out.println("Size: " + stack.size());        
+        stack.printStack();
 
+    }
 }
